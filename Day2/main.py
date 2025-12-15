@@ -15,7 +15,6 @@ def is_part2_invalid(n: int) -> bool:
                 return True
     return False
 def generate_repeated_numbers(max_digits: int):
-    """Generate all numbers made of repeated digit blocks"""
     nums = set()
     for block_len in range(1, max_digits + 1):
         for repeats in range(2, max_digits // block_len + 1):
